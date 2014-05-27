@@ -32,7 +32,7 @@
 				this.context.fillStyle = outputColor;
 	        	this.context.fillRect( 0, 0, this.context.canvas.width, this.context.canvas.height);
 			}
-		}	
+		}
 	};
 
 	//Main code module
@@ -48,7 +48,7 @@
 				value = $this.val();
 				showOutput(value);
 
-				//Clear'output' old value
+				//Clear'output' old value, using timeout to overcome issue with autocomplete filling in to late
 		        setTimeout(function(){
 		        	$this.val('');
 		        }, 100);
