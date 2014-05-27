@@ -49,21 +49,6 @@ module.exports = function (grunt) {
             all: ['scripts/main.js']
         },
 
-        clean: {
-            // Clean any pre-commit hooks in .git/hooks directory
-            precommit: ['.git/hooks/pre-commit'],
-            pull: ['.git/hooks/post-merge']
-        },
-
-        shell: {
-            precommit: {
-                command: 'cp git-hooks/pre-commit .git/hooks/'
-            },
-            pull: {
-                command: 'cp git-hooks/post-merge .git/hooks/'
-            }
-        },
-
         notify: {
             compass: {
               options: {
@@ -74,7 +59,6 @@ module.exports = function (grunt) {
 
 
     });
-
 
     // Required task(s)
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -87,6 +71,5 @@ module.exports = function (grunt) {
 
     // Default task(s)
     grunt.registerTask('default', ['compass:dev']);
-    grunt.registerTask('setup', ['clean:precommit','shell:precommit','clean:pull','shell:pull']);
     grunt.registerTask('live', ['jshint', 'uglify', 'compass:live']);
 };
