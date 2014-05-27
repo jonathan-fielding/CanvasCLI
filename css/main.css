@@ -381,63 +381,18 @@ textarea {
   resize: vertical;
 }
 
-/* line 9, ../sass/main.scss */
-.autocomplete-w1 {
-  background: url(img/shadow.png) no-repeat bottom right;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  margin: 6px 0 0 6px;
-  /* IE6 fix: */
-  _background: none;
-  _margin: 1px 0 0 0;
-}
-
 /* line 10, ../sass/main.scss */
-.autocomplete {
-  border: 1px solid #999;
-  background: #FFF;
-  cursor: default;
-  text-align: left;
-  max-height: 350px;
-  overflow: auto;
-  margin: -6px 6px 6px -6px;
-  /* IE6 specific: */
-  _height: 350px;
-  _margin: 0;
-  _overflow-x: hidden;
-}
-
-/* line 11, ../sass/main.scss */
-.autocomplete .selected {
-  background: #F0F0F0;
-}
-
-/* line 12, ../sass/main.scss */
-.autocomplete div {
-  padding: 2px 5px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* line 13, ../sass/main.scss */
-.autocomplete strong {
-  font-weight: normal;
-  color: #3399FF;
-}
-
-/* line 17, ../sass/main.scss */
 body {
   margin: 0 20px;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 .wrapper {
   max-width: 500px;
   margin: 0 auto;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 #output {
   border: 5px dotted #ccc;
   margin: 20px 0;
@@ -447,13 +402,13 @@ body {
   box-sizing: border-box;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 input {
   box-sizing: border-box;
   width: 100%;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .text-center {
   text-align: center;
 }
