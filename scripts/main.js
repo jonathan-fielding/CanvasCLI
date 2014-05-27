@@ -37,6 +37,7 @@
 
 	//Main code module
 	var cli = (function(){
+		var canvas = new canvasController('#output'); //We only need one instance in this example
 
 		//User input method
 		var userInput = function(e){
@@ -57,8 +58,6 @@
 
 		//Show the output
 		var showOutput = function(command){
-			var canvas = new canvasController('#output');
-
 			if (command.match(/^clear '[#0-9a-z]*'$/g)){
 				value = command.match(/'[#0-9a-z]*'/g)[0].replace(/\'/g, '');
 				canvas.setColour(value);

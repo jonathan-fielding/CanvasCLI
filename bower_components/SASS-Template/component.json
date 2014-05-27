@@ -1,0 +1,21 @@
+{
+  "name": "sass-template",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jonathan Fielding"
+  },
+  "homepage": "http://www.jonathanfielding.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonathan-fielding/SASS-Template.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "readme": "# SASS-Template /n/n SASS-Template is a easy to use set of SCSS files ready to get your project off to a quick start",
+  "_id": "sass-template@1.0.0",
+  "description": "SASS-Template is a easy to use set of SCSS files ready to get your project off to a quick start"
+}
