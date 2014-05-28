@@ -84,7 +84,7 @@
 							value: "clear 'green'"
 						}
 					]
-				});
+				}).focus();
 			}
 		};
 	}());
