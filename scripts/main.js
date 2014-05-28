@@ -37,6 +37,7 @@
 
 	//Main code module
 	var cli = (function(){
+		var $inputControl = $('.control');
 		var canvas = new canvasController('#output'); //We only need one instance in this example
 
 		//User input method
@@ -62,11 +63,15 @@
 				value = command.match(/'[#0-9a-z]*'/g)[0].replace(/\'/g, '');
 				canvas.setColour(value);
 			}
+			else{
+				$inputControl.next('.error').remove();
+				$('<p class="error">Your command "{{command}}" is not valid</p>'.replace('{{command}}',command)).insertAfter($inputControl);
+			}
 		};
 
 		return {
 			init: function(){
-				$('.control').on('keydown', userInput).autocomplete({
+				$inputControl.on('keydown', userInput).autocomplete({
 					lookup: [
 						{
 							value: "clear 'red'"

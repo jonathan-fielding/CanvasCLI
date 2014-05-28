@@ -408,7 +408,26 @@ input {
   width: 100%;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
+p.error {
+  color: #ff0000;
+}
+
+/* line 38, ../sass/main.scss */
+.autocomplete-suggestions {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+/* line 42, ../sass/main.scss */
+.autocomplete-suggestions .autocomplete-suggestion {
+  padding: 3px 5px;
+}
+/* line 45, ../sass/main.scss */
+.autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
+  background-color: #eee;
+}
+
+/* line 53, ../sass/main.scss */
 .text-center {
   text-align: center;
 }

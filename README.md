@@ -7,6 +7,8 @@ The implementation basically uses a constructor for the canvas, as I made the as
 
 The codebase to this app is based upon the Yeoman easy-webapp generator that I am the developer of, therefore it has a lot of structure there that is a bit overkill for something like this. In addition this means that all dependencies that can be Bower controlled are Bower controlled.
 
+I did not call the HTML file drawing.html as this would have prevented me from easily demonstrating it on GitHub pages, this is easily renamed
+
 ##Compiling
 
 To compile the project - 

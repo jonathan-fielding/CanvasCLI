@@ -5,7 +5,7 @@
 @import "../bower_components/SASS-Template/sass/_h5bp/normalize";
 @import "../bower_components/SASS-Template/sass/_h5bp/h5bp";
 
-//YOUR STYLES GO HERE
+//General styles
 
 body{
 	margin: 0 20px;
@@ -28,6 +28,24 @@ body{
 input{
 	box-sizing: border-box;
 	width: 100%;
+}
+
+p.error{
+	color: #ff0000;
+}
+
+//Autocomplete
+.autocomplete-suggestions{
+	background: #fff;
+	border: 1px solid #ccc;
+
+	.autocomplete-suggestion{
+		padding: 3px 5px;
+
+		&.autocomplete-selected{
+			background-color: #eee;
+		}
+	}
 }
 
 //Project Helpers
