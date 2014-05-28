@@ -59,12 +59,13 @@
 
 		//Show the output
 		var showOutput = function(command){
+			$inputControl.next('.error').remove();
+
 			if (command.match(/^clear '[#0-9a-z]*'$/g)){
 				value = command.match(/'[#0-9a-z]*'/g)[0].replace(/\'/g, '');
 				canvas.setColour(value);
 			}
 			else{
-				$inputControl.next('.error').remove();
 				$('<p class="error">Your command "{{command}}" is not valid</p>'.replace('{{command}}',command)).insertAfter($inputControl);
 			}
 		};
